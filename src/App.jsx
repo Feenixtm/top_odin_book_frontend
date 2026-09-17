@@ -2,15 +2,26 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Home from './components/Home';
+import DevHeader from './components/DevHeader';
+import SignUp from './components/forms/SignUp';
+import Login from './components/forms/Login';
 
 function App() {
 
   return (
     <BrowserRouter>
       
-      <Routes>
-        <Route path="/" element={ <Home/> }></Route>
-      </Routes>
+      <DevHeader/>
+
+      <main className='p-4 md:px-8'>
+
+        <Routes>
+          <Route path="/" element={ <Home/> }></Route>
+          <Route path='/sign-up' element={ <SignUp/> }></Route>
+          <Route path='/login' element={ <Login/> }></Route>
+        </Routes>
+
+      </main>
       
     </BrowserRouter>
   )
