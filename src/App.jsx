@@ -7,6 +7,7 @@ import Bio from './features/bio/components/Bio';
 import DirectMessages from './features/direct-messages/components/DirectMessages';
 import Feed from './features/feed/components/Feed';
 import Recommended from './features/recommended/components/Recommended';
+import FriendsList from './features/friends-list/components/FriendsList';
 import DevHeader from './components/DevHeader';
 import SignUp from './components/forms/SignUp';
 import Login from './components/forms/Login';
@@ -28,6 +29,7 @@ function App() {
           <Route path='/direct-messages' element={ <DirectMessages/> }></Route>
           <Route path='/feed' element={ <Feed/> }></Route>
           <Route path='/recommended' element={ <Recommended/> }></Route>
+          <Route path='/friends-list' element={ <FriendsList/> }></Route>
         </Routes>
 
       </main>
