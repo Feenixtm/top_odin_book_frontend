@@ -3,6 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
 import Home from './components/Home';
+import Bio from './features/bio/components/Bio';
+import DirectMessages from './features/direct-messages/components/DirectMessages';
+import Feed from './features/feed/components/Feed';
+import Recommended from './features/recommended/components/Recommended';
 import DevHeader from './components/DevHeader';
 import SignUp from './components/forms/SignUp';
 import Login from './components/forms/Login';
@@ -20,6 +24,10 @@ function App() {
           <Route path="/" element={ <Home/> }></Route>
           <Route path='/sign-up' element={ <SignUp/> }></Route>
           <Route path='/login' element={ <Login/> }></Route>
+          <Route path='/bio' element={ <Bio/> }></Route>
+          <Route path='/direct-messages' element={ <DirectMessages/> }></Route>
+          <Route path='/feed' element={ <Feed/> }></Route>
+          <Route path='/recommended' element={ <Recommended/> }></Route>
         </Routes>
 
       </main>
