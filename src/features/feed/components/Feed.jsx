@@ -1,4 +1,7 @@
 import React from 'react'
+import heartSVG from '../../../assets/svgs/heart.svg';
+import speechBubbleSVG from '../../../assets/svgs/speech-bubble.svg';
+import paperPlaneSVG from '../../../assets/svgs/paper-plane.svg';
 
 const Feed = () => {
     const mockFeed = [
@@ -13,12 +16,23 @@ const Feed = () => {
         <div className="flex flex-col gap-2">
             {mockFeed.map(item => (
                 <div key={item.id} className="flex flex-col border p-4 rounded-[0.25rem]">
-                    <span className="text-[0.875rem]">By {item.author} on {item.createdAt}</span>
+                    <span className="text-[0.875rem]">{item.author} on {item.createdAt}</span>
                     <p>{item.content}</p>
-                    <div className="flex gap-4">
-                        <button>Like</button>
-                        <button>Reply</button>
-                        <button>Share</button>
+                    <div className="flex gap-6 mt-3">
+                        <button className="feed-button flex items-center gap-1 px-2 py-1 rounded-[0.25rem]">
+                            <img src={heartSVG} className="w-4 h-4" alt="Heart" />
+                            <span>Like</span>
+                        </button>
+
+                        <button className="feed-button flex items-center gap-1 px-2 py-1 rounded-[0.25rem]">
+                            <img src={speechBubbleSVG} className="w-4 h-4" alt="Speech Bubble" />
+                            <span>Comment</span>
+                        </button>
+
+                        <button className="feed-button flex items-center gap-1 px-2 py-1 rounded-[0.25rem]">
+                            <img src={paperPlaneSVG} className="w-4 h-4" alt="Paper Plane" />
+                            <span>Share</span>
+                        </button>
                     </div>
                 </div>
             ))}
