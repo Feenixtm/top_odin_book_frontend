@@ -19,7 +19,7 @@ function App() {
       
       <DevHeader/>
 
-      <main className='h-[calc(100vh-3.5rem-1px)] p-4 md:px-8 bg-emerald-200'>
+      <main className='flex justify-center h-[calc(100vh-3.5rem-1px)] p-4 md:px-8 bg-emerald-200'>
 
         <Routes>
           <Route path="/" element={ <Home/> }></Route>

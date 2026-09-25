@@ -13,7 +13,7 @@ const Feed = () => {
   return (
     <div>
         {/* <h1>Feed</h1> */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-w-[48rem]">
             {mockFeed.map(item => (
                 <div key={item.id} className="flex flex-col border p-4 rounded-[0.25rem]">
                     <span className="text-[0.875rem]">{item.author} on {item.createdAt}</span>
