@@ -39,3 +39,9 @@
   background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+.send-message-btn:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
