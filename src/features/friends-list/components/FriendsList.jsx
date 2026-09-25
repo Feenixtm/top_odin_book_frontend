@@ -8,7 +8,7 @@ const FriendsList = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-2 p-4 border w-[16rem]">
+    <div className="flex flex-col gap-2 p-4 border w-[18rem]">
       <h1 className="text-[1.5rem] font-[500]">My Friends</h1>
       <ul className="flex flex-col gap-1 p-2">
         {mockFriends.map(friend => (
